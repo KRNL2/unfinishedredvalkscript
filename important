@@ -1,0 +1,116 @@
+    -- Red Valk Script --
+    
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    
+    -- This part puts the Accessory into my user in the workspace. (game:GetService("Workspace").lookafork.ValkyrieHelm) --
+    local a = Instance.new("Accessory") --  was BoolValue
+    a.Name = "ValkyrieHelm"
+    a.Parent = game:GetService("Players").LocalPlayer.Character
+    
+    
+    -- This part will insert a part called handle into the accessory... --
+    local b = Instance.new("Part") --  This will insert the part
+    b.Name = "Handle" -- Renames the part to handle
+    b.Parent = game:GetService("Players").LocalPlayer.Character.ValkyrieHelm -- This will insert the handle into the accessory (ValkyrieHelm)
+    
+    
+        -- This part will insert an attachment called HatAttachment --
+    local c = Instance.new("Attachment") --  This will insert the Attachment into the handle
+    c.Name = "HatAttachment" -- Renames the attachment to HatAttachment
+    c.Parent = game:GetService("Players").LocalPlayer.Character.ValkyrieHelm.Handle -- This will insert the HatAttachment into the handle
+    
+    
+            -- This part will insert a Mesh into the Handle part --
+    local d = Instance.new("SpecialMesh") --  This will insert the SpecialMesh into the handle
+    d.Name = "Mesh" -- Renames the SpecialMesh to Mesh
+    d.Parent = game:GetService("Players").LocalPlayer.Character.ValkyrieHelm.Handle -- This will insert the HatAttachment into the handle
+    
+    
+        -- This part puts the Vector3Value into the handle --
+    local e = Instance.new("Vector3Value") 
+    e.Name = "OriginalSize"
+    e.Parent = game:GetService("Players").LocalPlayer.Character.ValkyrieHelm.Handle
+    
+    
+    
+           -- This part puts the weld into the handle --
+    local f = Instance.new("Weld") 
+    f.Name = "AccessoryWeld"
+    f.Parent = game:GetService("Players").LocalPlayer.Character.ValkyrieHelm.Handle
+    
+    
+    
+    
+    --------------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+
+    
+    -- Main Script --
+    -- Mesh --
+chr.ValkyrieHelm.Handle.Mesh.MeshId = "1365696"
+chr.ValkyrieHelm.Handle.Mesh.MeshId = "http://www.roblox.com/asset/?id=1365696"
+chr.ValkyrieHelm.Handle.Mesh.TextureId = "http://www.roblox.com/asset/?id=2565420227"
+chr.ValkyrieHelm.Handle.Mesh.TextureID = "http://www.roblox.com/asset/?id=2565420227"
+
+-- OriginalSize -- 
+
+
+
+
+
+
+
+
+
+
+
+-- IMPORTANT --
+-- MeshID: "rbxassetid://1365696"
+-- Texture ID: "rbxassetid://2565420227"
+-- Position:  {1.199040866595169e-13, 7.267561912536621, 0.31903696060180664}
+-- Orientation: {14.770000457763672, 0, 0} or -14.7747, -0, 0
+-- Size: {1, 0.800000011920929, 1} or 1, 1, 1.15
+
+-- Extra -- 
+-- OriginalSize: Value = "1, 0.8, 1"
+
+
+
+---------------------------------------------------------------------------------------------------------
+    
+-- chr.Head.Transparency = "0"
+-- chr.ValkyrieHelm.Mesh.MeshId = "http://www.roblox.com/asset/?id=1365696"
+-- chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=2565420227"
+-- chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=2565420227"
+-- chr.Head.Mesh.MeshId = "1365696"
+-- chr.Head.Transparency = "0"
+
+
+-- a.chr.ValkyrieHelm.Handle.Weld.C0 = "8.65838956e-09, -0.25, -0.000272244215, 1, 0, 0, 0, 1, 0, 0, 0, 1"
+-- a.chr.ValkyrieHelm.Handle.Weld.C1 = "0, 0.600000024, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1"
+
+
+-- NOTES --
+
+-- HatAttachment CFrame: 0, -0.243, -0.266, 1, 0, 0, 0, 0.967, 0.255, 0, -0.255, 0.967
+-- HatAttachment Position: 
+
+
+
+-- Handle CFrame: 0, 1.4, 0, -0.273, 0, 0.962, 0, 1, 0, -0.962, 0, -0.273
+-- Handle Position:  
+-- Handle Size: 1, 0.8, 1
+
+
+-- ValkyrieHelm AttachmentForward: -0, -0.255019, -0.966936
+-- ValkyrieHelm AttachmentPoint: 0, -0.34, -0.24, 1, 0, 0, 0, 0.967, 0.255, 0, -0.255, 0.967
+-- ValkyrieHelm AttachmentPos: 0, -0.34, -0.24
+-- ValkyrieHelm AttachmentRight: 1, 0, -0
+-- ValkyrieHelm AttachmentUp: -0, 0.966936, -0.255019
